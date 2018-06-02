@@ -339,6 +339,17 @@
             </td>
         </tr>
         <tr>
+            <td> 091 </td>
+            <td> 伊佛的暴徒 </td>
+            <td> <a href="javascript:load_map(['0000', '0111', '0111', '0000'],
+                                      ['000', '011', '011', '000'],
+                                      ['0000', '0001', '0000'],
+                                      [2, 2], [0, 0]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                陷阱有点多, 而且颜色和地图背景相近, 注意走位.
+            </td>
+        </tr>
+        <tr>
             <td> 096 </td>
             <td> 乌贼人的求婚 </td>
             <td> <a href="javascript:load_map(['0000', '0110', '0000', '0000'],
@@ -618,6 +629,7 @@
 
         ctx.fillStyle = "black";
         ctx.font = "16px Georgia";
-        ctx.fillText("G", 25*(end[1]-1)+9, 25*end[0]-4);
+        if (end[0] != 0)
+            ctx.fillText("G", 25*(end[1]-1)+9, 25*end[0]-4);
     }
 </script>
