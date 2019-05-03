@@ -1,0 +1,1010 @@
+<!-- https://github.com/201411132101/rance8 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title> 兰斯8任务攻略 </title>
+
+    <link rel="shortcut icon" href="https://bufan.xyz/favicon.ico">
+
+    <!-- css -->
+    <link href="https://bufan.xyz/css/public-style.css" rel="stylesheet" type="text/css" />
+    <style>
+        #container {
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+        #rance8 {
+            position: fixed;
+            left: 6%;
+            top: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+<canvas id="rance8" width="105" height="105">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<div id="container">
+    <h1 align="center"> 兰斯8攻略 </h1> 
+    <br/>
+    <table align="center">
+        <tr>
+            <th> 编号 </th>
+            <th> 任务名字 </th>
+            <th> 地图 </th>
+            <th> 攻略 </th>
+        </tr>
+        <tr>
+            <td> 011 </td>
+            <td> 请填写调查表 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                爱填不填.
+            </td>
+        </tr>
+        <tr>
+            <td> 013 </td>
+            <td> 爱丽丝之馆 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                通关后领钱.
+            </td>
+        </tr>
+        <tr>
+            <td> 017 </td>
+            <td> 对土地污染做点什么 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                怪物: 土壤污染(光弱). <br />
+                触发绿星后完成任务洛基加入, 听说第一次没有绿星.
+            </td>
+        </tr>
+        <tr>
+            <td> 018 </td>
+            <td> 推销城堡 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 019 </td>
+            <td> 建设中的兰斯城 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 020 </td>
+            <td> 兰斯城完成 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 兰斯城开放.
+            </td>
+        </tr>
+        <tr>
+            <td> 021 </td>
+            <td> 隔壁好吵啊 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 028 </td>
+            <td> 带上文豪 </td>
+            <td> <a href="javascript:load_map(['0100', '0110', '0110', '0100'],
+                                      ['000', '010', '010', '000'],
+                                      ['0100', '0100', '0100'],
+                                      [1, 2], [4, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                无法更换队伍成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 029 </td>
+            <td> 入侵的父母心 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 需要幸子义务教育两星.
+            </td>
+        </tr>
+        <tr>
+            <td> 030 </td>
+            <td> 忍法治疗不能 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 031 </td>
+            <td> 逃忍吹夜 </td>
+            <td> <a href="javascript:load_map(['0100', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0100', '0000', '0000'],
+                                      [2, 2], [2, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                右上左地图的最深处触发事件, 左地图的最深处获得忍者胶水.
+            </td>
+        </tr>
+        <tr>
+            <td> 032 </td>
+            <td> 女忍的寿命 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 034 </td>
+            <td> 丧失记忆的女孩 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 035 </td>
+            <td> 和伊吉斯做 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 037 </td>
+            <td> 护卫科潘冬 </td>
+            <td> <a href="javascript:load_map(['0000', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                放开科潘冬, 让我来.
+            </td>
+        </tr>
+        <tr>
+            <td> 038 </td>
+            <td> 科潘冬加入 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 科潘冬终于入手了.
+            </td>
+        </tr>
+        <tr>
+            <td> 039 </td>
+            <td> 科潘冬的生日 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 蛮喜欢科潘冬的.
+            </td>
+        </tr>
+        <tr>
+            <td> 040 </td>
+            <td> 八甲田山 </td>
+            <td> <a href="javascript:load_map(['0000', '1100', '0100', '0100'],
+                                      ['000', '100', '000', '000'],
+                                      ['0000', '0100', '0100'],
+                                      [4, 2], [2, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                谦信好可爱. <br />
+                地图很大, 不要乱走. <br />
+                1102171899 的<a href="https://tieba.baidu.com/p/1191680211" target="_blank"> 攻略 </a>很详细.
+            </td>
+        </tr>
+        <tr>
+            <td> 041 </td>
+            <td> 香姬加入 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 042 </td>
+            <td> 胜虎街道马拉松 </td>
+            <td> <a href="javascript:load_map(['0000', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                战斗次数过多会任务失败, 不用紧张, 正常打不会引发次数限制.
+            </td>
+        </tr>
+        <tr>
+            <td> 043 </td>
+            <td> 御馆之乱 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 044 </td>
+            <td> 谦信的献身 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 045 </td>
+            <td> 公园散步 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 046 </td>
+            <td> 教会事件 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                两波战斗. <br />
+                第一波: 2 铁头(光弱) + 2 角鲸鱼幼崽(炎弱) + 1 腐烂的尸体(光弱). <br />
+                第二波: 2 猪人 + 2 赤目(冰弱) + 1 腐烂的尸体(光弱).
+            </td>
+        </tr>
+        <tr>
+            <td> 047 </td>
+            <td> 炸弹的研究 </td>
+            <td> <a href="javascript:load_map(['0000', '1100', '0000', '0001'],
+                                      ['000', '100', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 1], [4, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                无法更换队伍成员. <br />
+                怪物贝贝塔会优先攻击诺贝尔, 诺贝尔死亡任务失败, 建议带点了初期守护天的护卫. <br />
+                从第二张地图的右下角进入洞穴.
+            </td>
+        </tr>
+        <tr>
+            <td> 048 </td>
+            <td> 污染人类 </td>
+            <td> <a href="javascript:load_map(['0001', '0000', '1111', '1111'],
+                                      ['000', '000', '111', '111'],
+                                      ['0000', '0000', '0001'],
+                                      [4, 1], [1, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-4 的右侧进行 BOSS 战.
+            </td>
+        </tr>
+        <tr>
+            <td> 049 </td>
+            <td> 更衣室的孔 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 050 </td>
+            <td> 年轻的亲卫队战士 </td>
+            <td> <a href="javascript:load_map(['1111', '1110', '1000', '0000'],
+                                      ['011', '110', '000', '000'],
+                                      ['1100', '1000', '0000'],
+                                      [1, 2], [1, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                完成后基露蒂加入.
+            </td>
+        </tr>
+        <tr>
+            <td> 052 </td>
+            <td> 指名通缉的美女 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 053 </td>
+            <td> 鹤的报恩 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 054 </td>
+            <td> 库雷因的藏身处 </td>
+            <td> <a href="javascript:load_map(['1100', '1110', '0111', '0000'],
+                                      ['100', '100', '011', '000'],
+                                      ['0100', '0110', '0000'],
+                                      [1, 1], [0, 0]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                若干次战斗后任务完成, 直接撞红球吧.
+            </td>
+        </tr>
+        <tr>
+            <td> 055 </td>
+            <td> 人情回收 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 056 </td>
+            <td> 感情扩散的忍者 </td>
+            <td> <a href="javascript:load_map(['1000', '1000', '1000', '1000'],
+                                      ['000', '000', '000', '000'],
+                                      ['1000', '1000', '1000'],
+                                      [3, 1], [1, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                出发前整理一下技能.
+            </td>
+        </tr>
+        <tr>
+            <td> 060 </td>
+            <td> 狮子心 </td>
+            <td> <a href="javascript:load_map(['1000', '1100', '0000', '0000'],
+                                      ['000', '100', '000', '000'],
+                                      ['1000', '0000', '0000'],
+                                      [1, 1], [2, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-1 中触发绿色感叹号, 选择破坏路障, 任务完成后触发任务 62.
+                选择不破坏路障或不触发事件, 任务完成后触发任务 61. <br />
+                地图 2-2 第二个房间有回复之泉. <br />
+                BOSS 战前选择战斗直接打完, 选择离去阿尔卡涅泽的血量会减少, 己方技能全部恢复, 
+                此时一般打不过, 推荐选择离去.
+            </td>
+        </tr>
+        <tr>
+            <td> 061 </td>
+            <td> 猎豹之心 </td>
+            <td> <a href="javascript:load_map(['1000', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['1000', '0000', '0000'],
+                                      [1, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                刷稀有 A 的好地方, 带上番茄和梅丽姆, 一周目还可以带上谦信. <br />
+                带上番茄的情况下, 第一张地图无宝箱, 第二三张地图 5 个宝箱, 最后一张地图 4 个宝箱. <br />
+                逸騎刀閃·改的<a href="https://tieba.baidu.com/p/1520483615" target="_blank"> 攻略 </a>很详细.
+            </td>
+        </tr>
+        <tr>
+            <td> 063 </td>
+            <td> 利萨斯的怪谈 </td>
+            <td> <a href="javascript:load_map(['1110', '0010', '0000', '0000'],
+                                      ['110', '000', '000', '000'],
+                                      ['0010', '0000', '0000'],
+                                      [1, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                怪物: 灵体为主, 物理伤害变为 1/3, 用法师当主力. <br />
+                第三张地图右边房间守门的是尤达因, 回避率超级高, 用法师打他.
+                进去后触发绿星和诺娃对话, 任务完成后诺娃加入(可用来抓女子怪物). <br />
+                第四张地图选择就这样看着, 不用战斗. 选择阻止他们, 触发战斗和 H 事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 064 </td>
+            <td> 探望玛吉柯 </td>
+            <td> <a href="javascript:load_map(['0000', '0011', '0111', '1111'],
+                                      ['000', '001', '010', '111'],
+                                      ['0000', '0011', '0011'],
+                                      [4, 1], [3, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 2-3 脱出. <br />
+                地图 3-3 下方触发事件任务失败, 但是下次可以从地图 4-3 直接往上走, 推荐触发事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 065 </td>
+            <td> 博物馆中的消咒橡皮 </td>
+            <td> <a href="javascript:load_map(['0100', '1110', '0100', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0100', '0100', '0000'],
+                                      [2, 2], [0, 0]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                BOSS 会随机出现在初始点上下左右的其中一个地图.
+            </td>
+        </tr>
+        <tr>
+            <td> 070 </td>
+            <td> 卡拉森林再行 </td>
+            <td> <a href="javascript:load_map(['0000', '0000', '1100', '0100'],
+                                      ['000', '000', '100', '000'],
+                                      ['0000', '0000', '0100'],
+                                      [4, 2], [3, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                第一张地图走上面的门, 第二张地图走左边的门.
+            </td>
+        </tr>
+        <tr>
+            <td> 071 </td>
+            <td> 魔人凯特 </td>
+            <td> <a href="javascript:load_map(['0000', '0100', '1110', '0000'],
+                                      ['000', '000', '110', '000'],
+                                      ['0000', '0100', '0000'],
+                                      [2, 2], [3, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                先去地图 3-2, 3-3 触发所有事件, 再去地图 3-1 触发事件. <br />
+                地图 3-2 陷阱有点多, 注意走位. <br />
+                地图 3-1 触发某个绿星可以于毛利照对话, 对话后任务完成毛利照加入. <br />
+                地图 3-1 触发事件后, 会被传送回出发地点, 所有人血量会降为 1 点, 推荐触发事件前, 换上炮灰. 
+                忘了也没关系, 触发木屋前绿星, 选择不吃饼干, 血量回复 50%; 
+                选择吃, 任务失败, 完成一个任务后, 开启任务 079, 进图就可以选择吃饼干了. <br />
+            </td>
+        </tr>
+        <tr>
+            <td> 072 </td>
+            <td> 元凶是帕斯特尔 </td>
+            <td> <a href="javascript:load_map(['0001', '1001', '1111', '0100'],
+                                      ['000', '000', '111', '000'],
+                                      ['0001', '1001', '0100'],
+                                      [4, 2], [1, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                过图时队伍成员必须包含伊吉斯且全为女性. <br />
+                地图 3-2 的小 BOSS 会全体攻击, 带奶妈和战士, 不用带护卫. <br />
+                地图 1-4 直接往上走. <br />
+                地图 3-1, 2-4 有脱出点.
+            </td>
+        </tr>
+        <tr>
+            <td> 073 </td>
+            <td> 等待兰斯的少女 </td>
+            <td> <a href="javascript:load_map(['0100', '0100', '1110', '0100'],
+                                      ['000', '000', '110', '000'],
+                                      ['0100', '0100', '0100'],
+                                      [3, 1], [1, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                女儿太可爱了!
+            </td>
+        </tr>
+        <tr>
+            <td> 074 </td>
+            <td> 亲子鉴定 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                打帕斯特尔.
+            </td>
+        </tr>
+        <tr>
+            <td> 078 </td>
+            <td> 酒馆里的醉汉 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 可怜的巴特.
+            </td>
+        </tr>
+        <tr>
+            <td> 079 </td>
+            <td> 大胸姐姐加入 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 081 </td>
+            <td> 奇迹的人工生命体 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 084 </td>
+            <td> 舞姬润滑液的传说 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 润滑液在宝箱中随机开出.
+            </td>
+        </tr>
+        <tr>
+            <td> 085 </td>
+            <td> 制作舞姬润滑液 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 润滑液在宝箱中随机开出.
+            </td>
+        </tr>
+        <tr>
+            <td> 086 </td>
+            <td> 街道上的美国佬 </td>
+            <td> <a href="javascript:load_map(['0000', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                第二张地图帐篷前的事件, 选择捡起来读, 行商人裴坦死亡, 开启任务 087. 
+                选择不读, 行商人裴坦存活, 任务完成后获得呆毛.
+            </td>
+        </tr>
+        <tr>
+            <td> 087 </td>
+            <td> 美国佬 GOHOME </td>
+            <td> <a href="javascript:load_map(['0000', '1110', '0000', '0000'],
+                                      ['000', '110', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 1], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                第三张地图进入右下方的洞穴.
+            </td>
+        </tr>
+        <tr>
+            <td> 088 </td>
+            <td> 魔物使的圣地 </td>
+            <td> <a href="javascript:load_map(['0011', '0011', '0011', '0010'],
+                                      ['000', '000', '001', '000'],
+                                      ['0011', '0011', '0010'],
+                                      [4, 3], [1, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-3, 2-4 有脱出点.
+            </td>
+        </tr>
+        <tr>
+            <td> 089 </td>
+            <td> 明星魔法使 </td>
+            <td> <a href="javascript:load_map(['0100', '0100', '0100', '0000'],
+                                      ['000', '000', '000', '000'],
+                                      ['0100', '0100', '0000'],
+                                      [3, 2], [1, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                怪物很弱, 随便打.
+            </td>
+        </tr>
+        <tr>
+            <td> 090 </td>
+            <td> 家里蹲宅女 </td>
+            <td> <a href="javascript:load_map(['1111', '0001', '0000', '0000'],
+                                      ['111', '000', '000', '000'],
+                                      ['0001', '0000', '0000'],
+                                      [1, 1], [2, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                陷阱有点多, 而且颜色和地图背景相近, 注意走位.
+            </td>
+        </tr>
+        <tr>
+            <td> 091 </td>
+            <td> 伊佛的暴徒 </td>
+            <td> <a href="javascript:load_map(['0000', '0111', '0111', '0000'],
+                                      ['000', '011', '011', '000'],
+                                      ['0000', '0101', '0000'],
+                                      [2, 2], [0, 0]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                除去初始地图, 随机在地图内触发事件. <br />
+                在地图内到处转就可以了, 没事件了就去下一张地图继续转.
+            </td>
+        </tr>
+        <tr>
+            <td> 092 </td>
+            <td> 被诅咒的公主 </td>
+            <td> <a href="javascript:load_map(['0000', '0010', '0011', '0110'],
+                                      ['000', '000', '001', '010'],
+                                      ['0000', '0010', '0010'],
+                                      [4, 2], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 3-4 固定刷两根分别附魔 4 和 8 的棍棒, 可以给忍者和自建拳师刷高眩晕的极品棍棒(PS: 我的有 64 的眩晕). <br />
+                打完猪人后, 选择亲吻, 任务完成. 选择不亲, 任务失败.
+            </td>
+        </tr>
+        <tr>
+            <td> 096 </td>
+            <td> 乌贼人的求婚 </td>
+            <td> <a href="javascript:load_map(['0000', '0110', '0000', '0000'],
+                                      ['000', '010', '000', '000'],
+                                      ['0000', '0000', '0000'],
+                                      [2, 2], [2, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                怪物-乌贼人, 乌贼娘-弱点炎. <br />
+                之前不打倒乌贼男(不碰绿星), 任务完成巴娜特-塞拉米缇加入.
+            </td>
+        </tr>
+        <tr>
+            <td> 099 </td>
+            <td> 收获的季节</td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                无法更换队伍成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 100 </td>
+            <td> 蘑菇森林的踢鬼</td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                陷阱很多, 注意走位, 带上忍者.
+            </td>
+        </tr>
+        <tr>
+            <td> 101 </td>
+            <td> 春天的赏花大会 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 所有参加的人中未满 40 级的人等级提升 1 级.
+            </td>
+        </tr>
+        <tr>
+            <td> 102 </td>
+            <td> 夏天的大海水浴 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 所有参加的人中未满 40 级的人等级提升 1 级.
+            </td>
+        </tr>
+        <tr>
+            <td> 103 </td>
+            <td> 秋天的超运动会 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 所有参加的人中未满 40 级的人等级提升 1 级.
+            </td>
+        </tr>
+        <tr>
+            <td> 104 </td>
+            <td> 冬天的包场温泉 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 所有参加的人中未满 40 级的人等级提升 1 级.
+            </td>
+        </tr>
+        <tr>
+            <td> 106 </td>
+            <td> 暗爱丽丝的收费房间 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                提升自建人物能力. <br />
+                akuseiru 的<a href="https://tieba.baidu.com/p/1479194488" target="_blank"> 攻略 </a>很详细.
+            </td>
+        </tr>
+        <tr>
+            <td> 107 </td>
+            <td> 爱丽丝支援中心 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                调整角色资料可以进行角色体内吸收的特殊道具变更, 
+                所以禁欲诅咒被害前一定要保证装备有特殊道具. <br />
+                千万不要选 EASY 模式.
+            </td>
+        </tr>
+        <tr>
+            <td> 111 </td>
+            <td> 女 M 的出租 1 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                有两个复制怪, 会复制己方成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 112 </td>
+            <td> 女 M 的出租 2 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                有两个复制怪, 会复制己方成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 113 </td>
+            <td> 女 M 的出租 3 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                有两个复制怪, 会复制己方成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 117 </td>
+            <td> 库古拷问机械 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 库古碎片在迷宫中获得.
+            </td>
+        </tr>
+        <tr>
+            <td> 118 </td>
+            <td> 拷问机械的第 2 次挑战 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 库古碎片在迷宫中获得.
+            </td>
+        </tr>
+        <tr>
+            <td> 119 </td>
+            <td> 拷问机械的第 3 次挑战 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 库古碎片在迷宫中获得.
+            </td>
+        </tr>
+        <tr>
+            <td> 121 </td>
+            <td> 玛鲁古利多迷宫第 1 层 </td>
+            <td> <a href="javascript:load_map(['1111', '0011', '0010', '0000'],
+                                      ['111', '001', '000', '000'],
+                                      ['0010', '0010', '0000'],
+                                      [1, 1], [2, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-3 有熊(队伍成员小于等于 2 个)和圆美(带熊来这). <br />
+                地图 2-3 有魔想(不带兰斯来这), 超强力法师, 尽早入手. <br />
+                地图 3-3 有碎片 A. <br />
+                地图 2-4 有脱出点. <br />
+                BOSS 是 3 哈尼 + 2 乌比.
+            </td>
+        </tr>
+        <tr>
+            <td> 122 </td>
+            <td> 玛鲁古利多迷宫第 2 层 </td>
+            <td> <a href="javascript:load_map(['1111', '0110', '0110', '0000'],
+                                      ['111', '010', '010', '000'],
+                                      ['0100', '0100', '0000'],
+                                      [1, 1], [3, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-4 有碎片 B. <br />
+                地图 2-3 有碎片 C. <br />
+                地图 3-3 有目录. <br />
+                地图 1-4, 3-2 有脱出点. <br /> 
+                BOSS 是 3 奥兹 + 2 赤目.
+            </td>
+        </tr>
+        <tr>
+            <td> 123 </td>
+            <td> 玛鲁古利多迷宫第 3 层 </td>
+            <td> <a href="javascript:load_map(['1110', '1111', '0001', '0011'],
+                                      ['110', '111', '000', '001'],
+                                      ['1000', '0001', '0001'],
+                                      [2, 3], [1, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 4-3 有碎片 A. <br />
+                地图 3-4 有目录. <br />
+                地图 4-4 有脱出点. <br />
+                BOSS 是 3 武士 + 2 女仆.
+            </td>
+        </tr>
+        <tr>
+            <td> 124 </td>
+            <td> 玛鲁古利多迷宫第 4 层 </td>
+            <td> <a href="javascript:load_map(['1111', '1100', '0111', '0111'],
+                                      ['111', '100', '011', '011'],
+                                      ['0100', '0100', '0101'],
+                                      [2, 2], [3, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-3 有玛利亚(带上兰斯和魔想). <br />
+                地图 1-4 有碎片 B. <br />
+                地图 2-1 有碎片 C. <br />
+                地图 3-2 有目录. <br />
+                地图 1-1, 4-3 有脱出点. <br />
+                BOSS 是 2 坦克 + 2 灵体 + 1 女怪.
+            </td>
+        </tr>
+        <tr>
+            <td> 125 </td>
+            <td> 玛鲁古利多迷宫第 5 层 </td>
+            <td> <a href="javascript:load_map(['1111', '1101', '1111', '1000'],
+                                      ['011', '000', '111', '000'],
+                                      ['1101', '1101', '1000'],
+                                      [1, 1], [1, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 4-1 有碎片 A. <br />
+                地图 1-2 有脱出点. <br />
+                BOSS 是 5 红哈尼.
+            </td>
+        </tr>
+        <tr>
+            <td> 126 </td>
+            <td> 玛鲁古利多迷宫第 6 层 </td>
+            <td> <a href="javascript:load_map(['1111', '1111', '1111', '1111'],
+                                      ['101', '010', '010', '101'],
+                                      ['1111', '1001', '1111'],
+                                      [1, 1], [3, 3]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                1-3 有碎片 B. <br />
+                2-2 有碎片 C. <br />
+                3-3 有脱出点. <br />
+                BOSS 是 石头人 G, 很肉.
+            </td>
+        </tr>
+        <tr>
+            <td> 127 </td>
+            <td> 玛鲁古利多迷宫第 7 层 </td>
+            <td> <a href="javascript:load_map(['1111', '1001', '1001', '1111'],
+                                      ['111', '000', '000', '111'],
+                                      ['1001', '1001', '1001'],
+                                      [1, 1], [4, 4]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                BOSS 是 3 奈落之王. <br />
+                MAGNUM 奖励是稀有 B 透明铠甲.
+            </td>
+        </tr>
+        <tr>
+            <td> 128 </td>
+            <td> 玛鲁古利多迷宫第 8 层 </td>
+            <td> <a href="javascript:load_map(['1010', '1010', '1010', '1111'],
+                                      ['000', '000', '000', '111'],
+                                      ['1010', '1010', '1010'],
+                                      [4, 4], [1, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-3 有炮台, 不打掉的话, 过图和战斗后会被炮击, 建议全忍者跑到 BOSS 点, 再换上主力干BOSS. <br />
+                强行打掉炮台也是一种方法, 但是我打完炮台后, 差不多没有攻击次数了.
+            </td>
+        </tr>
+        <tr>
+            <td> 129 </td>
+            <td> 玛鲁古利多迷宫第 9 层 </td>
+            <td> <a href="javascript:load_map(['1010', '1010', '1010', '1111'],
+                                      ['000', '000', '000', '111'],
+                                      ['1010', '1010', '1010'],
+                                      [4, 4], [1, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                按照上-下-右-左-下-右-下的顺序过图. <br />
+                通过最后一门之前记得换上奶妈和战士, 过门后会马上遭遇全体攻击, 血量厚, 伤害高的小怪. <br />
+                MAGNUM 奖励是稀有 B 史莱姆衣.
+            </td>
+        </tr>
+        <tr>
+            <td> 130 </td>
+            <td> 玛鲁古利多迷宫第 10 层 </td>
+            <td> <a href="javascript:load_map(['1111', '1101', '1101', '1000'],
+                                      ['111', '100', '100', '000'],
+                                      ['1001', '1001', '1000'],
+                                      [1, 1], [4, 1]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                地图 1-2 有碎片 A. <br />
+                地图 2-2 有碎片 B. <br />
+                地图 3-2 有碎片 C. <br />
+                地图 4-3 有脱出点. <br />
+                过图时会随机一个职业战斗不能. <br />
+                可以在迷宫 10 给主力练级, 往右走到底脱出, 这样只会有一个职业战斗不能. <br />
+                迷宫 10 可捕捉猫又, 战斗书记, 女武神.
+            </td>
+        </tr>
+        <tr>
+            <td> 134 </td>
+            <td> CITY 漫游 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 135 </td>
+            <td> 哈尼秘密基地 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                地图中怪物会随机弱点属性, 并且对非弱点属性抗性很高, 不过无属性的上杉虎子能打出全额伤害.
+            </td>
+        </tr>
+        <tr>
+            <td> 136 </td>
+            <td> 蟑螂的骚动 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                清完所有红球.
+            </td>
+        </tr>
+        <tr>
+            <td> 141 </td>
+            <td> 异常果冻的讨伐 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                只有不到 25 级的角色才可攻略, 建议将强力角色通过爱丽丝支援中心降为 1 级再升回 25 级进行攻略.
+            </td>
+        </tr>
+        <tr>
+            <td> 148 </td>
+            <td> 纳豆女体盛 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 150 </td>
+            <td> 冰炎 3 人娘 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 154 </td>
+            <td> 胸部放松 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 182 </td>
+            <td> 用史莱姆法袍玩 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件, 史莱姆法袍的获取见任务 129.
+            </td>
+        </tr>
+        <tr>
+            <td> 183 </td>
+            <td> 深夜的米露尤库斯 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 185 </td>
+            <td> 发光的超级兵器 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 189 </td>
+            <td> 香姬的聚餐会 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 208 </td>
+            <td> 危险的口交 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+
+<script>
+    var canvas = document.getElementById("rance8");
+    var ctx = canvas.getContext('2d');
+
+    ctx.strokeRect(0, 0, 105, 105);
+
+    for (var r = 0; r < 4; r++)
+        for (var c = 0; c < 4; c++)
+            ctx.strokeRect(25*c+5, 25*r+5,  20, 20);
+
+    function load_map(exist, link_r, link_c, start, end) {
+        ctx.clearRect(0, 0, 105, 105);
+        ctx.strokeRect(1, 1, 103, 103);
+
+        // 多次绘制加深线条
+        for (var i = 0; i < 5; i++)
+            repeat_load(exist, link_r, link_c, start, end);
+    }
+    function repeat_load(exist, link_r, link_c, start, end) {
+        ctx.fillStyle = "rgba(135, 206, 250, 0.5)";
+        for (var r = 0; r < 4; r++)
+            for (var c = 0; c < 4; c++) {
+                if (exist[r][c] == '1')
+                    ctx.fillRect(25*c+5, 25*r+5, 20, 20);
+                ctx.strokeRect(25*c+5, 25*r+5,  20, 20);
+            }
+
+        for (var r = 0; r < 4; r++)
+            for (var c = 0; c < 3; c++)
+                if (link_r[r][c] == '1') {
+                    ctx.strokeRect(25*(c+1), 25*r+12, 5, 6);
+                    ctx.clearRect(25*(c+1)-1, 25*r+13, 7, 4);
+                }
+
+        for (var r = 0; r < 3; r++)
+            for (var c = 0; c < 4; c++)
+                if (link_c[r][c] == '1') {
+                    ctx.strokeRect(25*c+12, 25*(r+1), 6, 5);
+                    ctx.clearRect(25*c+13, 25*(r+1)-1, 4, 7);
+                }
+
+        ctx.fillStyle = "#EEB422";
+        ctx.fillRect(25*(start[1]-1)+8, 25*(start[0]-1)+8, 14, 14);
+
+        ctx.fillStyle = "black";
+        ctx.font = "16px Georgia";
+        if (end[0] != 0)
+            ctx.fillText("G", 25*(end[1]-1)+9, 25*end[0]-4);
+    }
+</script>
