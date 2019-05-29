@@ -1,3 +1,4 @@
+
 <!-- https://github.com/201411132101/rance8 -->
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@
         }
         #rance8 {
             position: fixed;
-            left: 6%;
+            left: 4%;
             top: 180px;
         }
     </style>
@@ -30,7 +31,7 @@
     
 </html>
 
-<canvas id="rance8" width="105" height="105">
+<canvas id="rance8" width="130" height="130">
     Your browser does not support the HTML5 canvas tag.
 </canvas>
 
@@ -57,7 +58,15 @@
             <td> 爱丽丝之馆 </td>
             <td> 无 </td>
             <td style="text-align: justify;">
-                通关后领钱.
+                开局打招呼以及通关后领钱.
+            </td>
+        </tr>
+        <tr>
+            <td> 016 </td>
+            <td> 去酒馆招募 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                这个任务出现就点, 可以领妹子.
             </td>
         </tr>
         <tr>
@@ -99,6 +108,26 @@
             <td> 无 </td>
             <td style="text-align: justify;">
                 纯事件.
+            </td>
+        </tr>
+	<tr>
+            <td> 025 </td>
+            <td> 居住在闪耀洞穴的文豪 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                第一个任务, 帮助新手熟悉游戏模式的, 往里面走就行, 没啥要注意的.
+            </td>
+        </tr>
+        <tr>
+            <td> 026 </td>
+            <td> 回收原稿并且搜索人 </td>
+            <td> <a href="javascript:load_map(['0000', '0000', '0100', '1100'],
+                                      ['000', '000', '000', '100'],
+                                      ['0000', '000', '0100'],
+                                      [4, 1], [3, 2]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                兰斯斩留给地图 D-2 中的道中小 BOSS. <br />
+                触发地图 C-2 中的绿星会触发选项, 选择强行夺走, 文豪死亡, 选择不夺走, 文豪存活. 暂不清楚文豪状态对后续任务的影响.
             </td>
         </tr>
         <tr>
@@ -148,6 +177,15 @@
             </td>
         </tr>
         <tr>
+            <td> 033 </td>
+            <td> 卡拉事件 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                打完三个杂鱼后会出现选项, 选择取下水晶, 伊吉斯死亡, 得到强力道具卡拉水晶, 选择不取下, 伊吉斯存活. 
+                伊吉斯死亡的话部分任务无法激活, 因此该任务需要做两次.
+            </td>
+        </tr>
+        <tr>
             <td> 034 </td>
             <td> 丧失记忆的女孩 </td>
             <td> 无 </td>
@@ -158,6 +196,14 @@
         <tr>
             <td> 035 </td>
             <td> 和伊吉斯做 </td>
+            <td> 无 </td>
+            <td style="text-align: justify;">
+                纯事件.
+            </td>
+        </tr>
+        <tr>
+            <td> 036 </td>
+            <td> 科潘冬CITY </td>
             <td> 无 </td>
             <td style="text-align: justify;">
                 纯事件.
@@ -495,6 +541,17 @@
             </td>
         </tr>
         <tr>
+            <td> 083 </td>
+            <td> 葡萄狩猎于葡萄饭 </td>
+            <td> <a href="javascript:load_map(['1000', '1000', '0000', '0000'],
+                                      ['000', '000', '000', '000'],
+                                      ['1000', '0000', '0000'],
+                                      [1, 1], [0, 0]);"> 显示地图 </a> </td>
+            <td style="text-align: justify;">
+                打五次葡萄怪, 任务完成.
+            </td>
+        </tr>
+        <tr>
             <td> 084 </td>
             <td> 舞姬润滑液的传说 </td>
             <td> 无 </td>
@@ -691,6 +748,14 @@
             <td> 单张地图 </td>
             <td style="text-align: justify;">
                 有两个复制怪, 会复制己方成员.
+            </td>
+        </tr>
+        <tr>
+            <td> 114 </td>
+            <td> 奈落之王 </td>
+            <td> 单张地图 </td>
+            <td style="text-align: justify;">
+                就奈落之王一个怪, 有一定等级后上战士打爆他, 前期打不过.
             </td>
         </tr>
         <tr>
@@ -964,15 +1029,25 @@
     var canvas = document.getElementById("rance8");
     var ctx = canvas.getContext('2d');
 
-    ctx.strokeRect(0, 0, 105, 105);
+    ctx.strokeRect(25, 25, 105, 105);
+    ctx.fillStyle = "black";
+    ctx.font = "16px Tahoma";
+    ctx.fillText("A", 8, 45);
+    ctx.fillText("B", 8, 70);
+    ctx.fillText("C", 8, 95);
+    ctx.fillText("D", 8, 120);
+    ctx.fillText("1", 35, 15);
+    ctx.fillText("2", 60, 15);
+    ctx.fillText("3", 85, 15);
+    ctx.fillText("4", 110, 15);
 
     for (var r = 0; r < 4; r++)
         for (var c = 0; c < 4; c++)
-            ctx.strokeRect(25*c+5, 25*r+5,  20, 20);
+            ctx.strokeRect(25*c+30, 25*r+30, 20, 20);
 
     function load_map(exist, link_r, link_c, start, end) {
-        ctx.clearRect(0, 0, 105, 105);
-        ctx.strokeRect(1, 1, 103, 103);
+        ctx.clearRect(25, 25, 105, 105);
+        ctx.strokeRect(26, 26, 103, 103);
 
         // 多次绘制加深线条
         for (var i = 0; i < 5; i++)
@@ -983,30 +1058,30 @@
         for (var r = 0; r < 4; r++)
             for (var c = 0; c < 4; c++) {
                 if (exist[r][c] == '1')
-                    ctx.fillRect(25*c+5, 25*r+5, 20, 20);
-                ctx.strokeRect(25*c+5, 25*r+5,  20, 20);
+                    ctx.fillRect(25*c+30, 25*r+30, 20, 20);
+                ctx.strokeRect(25*c+30, 25*r+30,  20, 20);
             }
 
         for (var r = 0; r < 4; r++)
             for (var c = 0; c < 3; c++)
                 if (link_r[r][c] == '1') {
-                    ctx.strokeRect(25*(c+1), 25*r+12, 5, 6);
-                    ctx.clearRect(25*(c+1)-1, 25*r+13, 7, 4);
+                    ctx.strokeRect(25*(c+1)+25, 25*r+37, 5, 6);
+                    ctx.clearRect(25*(c+1)+25-1, 25*r+38, 7, 4);
                 }
 
         for (var r = 0; r < 3; r++)
             for (var c = 0; c < 4; c++)
                 if (link_c[r][c] == '1') {
-                    ctx.strokeRect(25*c+12, 25*(r+1), 6, 5);
-                    ctx.clearRect(25*c+13, 25*(r+1)-1, 4, 7);
+                    ctx.strokeRect(25*c+37, 25*(r+1)+25, 6, 5);
+                    ctx.clearRect(25*c+38, 25*(r+1)+25-1, 4, 7);
                 }
 
         ctx.fillStyle = "#EEB422";
-        ctx.fillRect(25*(start[1]-1)+8, 25*(start[0]-1)+8, 14, 14);
+        ctx.fillRect(25*(start[1]-1)+33, 25*(start[0]-1)+33, 14, 14);
 
         ctx.fillStyle = "black";
-        ctx.font = "16px Georgia";
+        ctx.font = "16px Tahoma";
         if (end[0] != 0)
-            ctx.fillText("G", 25*(end[1]-1)+9, 25*end[0]-4);
+            ctx.fillText("G", 25*(end[1]-1)+34, 25*end[0]+25-4);
     }
 </script>
