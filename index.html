@@ -1664,7 +1664,9 @@
             ctx.strokeRect(25*c+30, 25*r+30, 20, 20);
 
     function load_map(exist, link_r, link_c, start, end) {
-        ctx.clearRect(25, 25, 105, 105);
+        ctx.fillStyle="#F6F4EC";
+        ctx.fillRect(25, 25, 105, 105);
+        ctx.fillStyle = "black";
         ctx.strokeRect(26, 26, 103, 103);
 
         // 多次绘制加深线条
